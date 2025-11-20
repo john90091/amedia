@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="105px" height="30px"
+     viewBox="0 0 100 50"
+     preserveAspectRatio="xMidYMid meet"
+     role="img" aria-label="Amedia logo">
+
+  <style>
+    text {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 35px;
+      font-weight: bold;
+    }
+    .white { fill: #ffffff; }
+    .pink { fill: #ff1919ff; }
+  </style>
+
+  <text x="-30"    y="35" class="white">Ani</text>
+  <text x="28"   y="35" class="pink">Media</text>
+</svg>
