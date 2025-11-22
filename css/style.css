@@ -2398,8 +2398,9 @@ h4 {
 	font-weight: bold;
 }
 
-  @media (min-width: 480px) and (max-width: 1024px) {
+  @media  (max-width: 1024px) {
 
       .hero {
          display: none;
       }
+	   }
