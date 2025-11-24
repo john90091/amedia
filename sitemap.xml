@@ -6,9 +6,16 @@
 <priority>1.0</priority>
 </url>
 <url>
+<url>
+<loc>https://amedia.fun/janr</loc>
+<changefreq>weekly</changefreq>
+<lastmod>2025-01-31T12:01:43+03:00</lastmod>
+<priority>1.0</priority>
+</url>
+<url>
 <loc>https://amedia.fun/anime/raskolotaya-bitvoy-sinovo-nebes-5.html</loc>
 <changefreq>weekly</changefreq>
 <lastmod>2025-01-31T17:01:43+03:00</lastmod>
-<priority>1.0</priority>
+<priority>0.6</priority>
 </url>
 </urlset>
