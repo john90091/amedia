@@ -1,17 +1,23 @@
-# ============================
-#   MAIN SEARCH ENGINES ACCESS
-# ============================
+###############################################
+# AMEDIA.FUN — ROBOTS.TXT PRO+ EDITION
+# High-security, SEO-optimized, smart version
+###############################################
+
+# =============================================
+#     1. FULL ACCESS FOR ALL SEARCH ENGINES
+# =============================================
 
 # Google
 User-agent: Googlebot
 Allow: /
 
-# Google Images
+User-agent: Googlebot-News
+Allow: /
+
 User-agent: Googlebot-Image
 Allow: /
 
-# Google News
-User-agent: Googlebot-News
+User-agent: Googlebot-Mobile
 Allow: /
 
 # Yandex
@@ -21,7 +27,12 @@ Allow: /
 User-agent: YandexBot
 Allow: /
 
-# Yandex Mobile
+User-agent: YandexImages
+Allow: /
+
+User-agent: YandexNews
+Allow: /
+
 User-agent: YandexMobileBot
 Allow: /
 
@@ -29,7 +40,7 @@ Allow: /
 User-agent: bingbot
 Allow: /
 
-# DuckDuckGo (uses Bing)
+# DuckDuckGo
 User-agent: DuckDuckBot
 Allow: /
 
@@ -41,21 +52,28 @@ Allow: /
 User-agent: Mail.RU_Bot
 Allow: /
 
-# Baidu (Китай)
+# EU / Middle East / Asia search engines
 User-agent: Baiduspider
 Allow: /
 
-# Naver (Корея)
-User-agent: Yeti
+User-agent: Yeti        # Naver (Korea)
 Allow: /
 
-# Seznam (Чехия)
-User-agent: SeznamBot
+User-agent: SeznamBot   # Czech search
 Allow: /
 
-# ============================
-#  GLOBAL RULES FOR SEARCH BOTS
-# ============================
+User-agent: SogouSpider
+Allow: /
+
+User-agent: Qwantify
+Allow: /
+
+User-agent: Exabot
+Allow: /
+
+# =============================================
+#            2. GLOBAL RULES
+# =============================================
 User-agent: *
 Disallow: /admin/
 Disallow: /administrator/
@@ -63,19 +81,32 @@ Disallow: /auth/
 Disallow: /login/
 Disallow: /register/
 Disallow: /user/
+Disallow: /account/
+Disallow: /profile/
+Disallow: /settings/
 Disallow: /private/
-Disallow: /cache/
-Disallow: /tmp/
-Disallow: /config/
 Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /cache/
+Disallow: /config/
+Disallow: /core/
 Disallow: /internal/
 Disallow: /api/
-Disallow: /*?session=
+Disallow: /ajax/
+Disallow: /xmlrpc.php
+
+# Block dynamic parameters
 Disallow: /*?utm_*
+Disallow: /*?session=
 Disallow: /*?sort=
 Disallow: /*?filter=
-Disallow: /search?
+Disallow: /*?PAGE=
+Disallow: /*&random=
+Disallow: /*?ref=
+Disallow: /*?from=
 
+# Allow static content
+Allow: /$
 Allow: /assets/
 Allow: /images/
 Allow: /static/
@@ -83,26 +114,20 @@ Allow: /public/
 Allow: /css/
 Allow: /js/
 Allow: /fonts/
-Allow: /
 
-# ============================
-#  IMAGES INDEXING
-# ============================
+# Allow images separately for visual search
 Allow: /*.jpg$
 Allow: /*.jpeg$
 Allow: /*.png$
 Allow: /*.webp$
+Allow: /*.gif$
 Allow: /*.svg$
 
-# ============================
-#  SITEMAPS
-# ============================
-Sitemap: https://amedia.fun/sitemap.xml
-Sitemap: https://amedia.fun/sitemap-images.xml
+# =============================================
+#       3. BLOCK AI SCRAPERS / BAD BOTS
+# =============================================
 
-# ============================
-#  BLOCK BAD BOTS  (AGGRESSIVE SCRAPERS)
-# ============================
+# SEO scrapers
 User-agent: AhrefsBot
 Disallow: /
 
@@ -118,13 +143,45 @@ Disallow: /
 User-agent: BLEXBot
 Disallow: /
 
-User-agent: CCBot
-Disallow: /
-
 User-agent: PetalBot
 Disallow: /
 
+User-agent: CCBot
+Disallow: /
+
+User-agent: AspiegelBot
+Disallow: /
+
+User-agent: Barkrowler
+Disallow: /
+
+# AI / Content theft
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: GPTCrawler
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Applebot
+Disallow: /
+
+# Mass downloading / offline mirror bots
 User-agent: HTTrack
+Disallow: /
+
+User-agent: WebCopier
 Disallow: /
 
 User-agent: Teleport
@@ -142,7 +199,21 @@ Disallow: /
 User-agent: Scrapy
 Disallow: /
 
-# ============================
-#  BOT SPEED CONTROL
-# ============================
+# =============================================
+#        4. SMART CRAWL MANAGEMENT
+# =============================================
+
+# Reduce load for generic bots
 Crawl-delay: 1
+
+# Yandex (recommended by Yandex)
+Host: amedia.fun
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content /
+
+
+# =============================================
+#               5. SITEMAPS
+# =============================================
+Sitemap: https://amedia.fun/sitemap.xml
+Sitemap: https://amedia.fun/sitemap-images.xml
+Sitemap: https://amedia.fun/sitemap-videos.xml
