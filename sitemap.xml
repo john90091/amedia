@@ -4,7 +4,7 @@
       <loc>https://amedia.fun/janr.html</loc>
       <lastmod>2025-12-02</lastmod>
       <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
+      <priority>1.0</priority>
     </url>
     <url>
       <loc>https://amedia.fun/login.html</loc>
@@ -16,7 +16,7 @@
       <loc>https://amedia.fun/index.html</loc>
       <lastmod>2025-12-02</lastmod>
       <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
+      <priority>1.0</priority>
     </url>
     <url>
       <loc>https://amedia.fun/anime/raskolotaya-bitvoy-sinovo-nebes-5.html</loc>
@@ -34,6 +34,6 @@
       <loc>https://amedia.fun/</loc>
       <lastmod>2025-12-02</lastmod>
       <changefreq>weekly</changefreq>
-      <priority>0.5</priority>
+      <priority>1.0</priority>
     </url>
 </urlset>
