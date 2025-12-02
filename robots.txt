@@ -215,5 +215,4 @@ Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content /
 #               5. SITEMAPS
 # =============================================
 Sitemap: https://amedia.fun/sitemap.xml
-Sitemap: https://amedia.fun/sitemap-images.xml
-Sitemap: https://amedia.fun/sitemap-videos.xml
+
