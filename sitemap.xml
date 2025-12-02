@@ -1,20 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://amedia.fun/</loc>
-<lastmod>2025-12-01</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://amedia.fun/janr.html</loc>
-<lastmod>2025-12-01</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>>https://amedia.fun/anime/raskolotaya-bitvoy-sinovo-nebes-5.html</loc>
-<lastmod>2025-12-01</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
-</url>
+    <url>
+      <loc>https://amedia.fun/janr.html</loc>
+      <lastmod>2025-12-02</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    <url>
+      <loc>https://amedia.fun/login.html</loc>
+      <lastmod>2025-12-02</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    <url>
+      <loc>https://amedia.fun/index.html</loc>
+      <lastmod>2025-12-02</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    <url>
+      <loc>https://amedia.fun/anime/raskolotaya-bitvoy-sinovo-nebes-5.html</loc>
+      <lastmod>2025-12-02</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    <url>
+      <loc>https://amedia.fun/signup.html</loc>
+      <lastmod>2025-12-02</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    <url>
+      <loc>https://amedia.fun/</loc>
+      <lastmod>2025-12-02</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.5</priority>
+    </url>
 </urlset>
